@@ -51,6 +51,10 @@ h1 {
 .contenido {
   display: flex;
   flex-direction: column;
+  height: calc(100vh - 45px);
+}
+.contenido img {
+	height:100%;
 }
 .image-contenido {
   position: relative;
@@ -82,7 +86,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, 230px);
     justify-content: center;
-    margin: 3rem auto;
+    margin: 8rem auto;
     gap: 3rem;
     text-align: center;
 }
@@ -243,7 +247,7 @@ h1 {
     margin: 10px auto 20px;
 }
 #banner {
-  width:100vw;
+  margin: 3rem 0;
   font: 50px sans-serif;
   color:white;
   height: 64vh;
@@ -254,7 +258,82 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
 }
+.footer{
+  width: 100%;
+  height: auto;
+  background-color: #555555;
+  color: white;
+}
+.footerBox{
+  width: 95%;
+  padding: 40px 30px 50px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 6fr  1fr;
+  gap: 1rem;
+}
+.groupsContainer{
+  display: flex;
+  gap: 20px;
+}
+.group{
+  width: calc(55% / 4);
+}
+.group ul {
+  padding: 0;
+}
+.group ul li{
+  list-style: none;
+  margin: 3px 0;
+}
+.group ul li a{
+  text-decoration: none;
+  color: white;
+}
+.group ul li a:hover{
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.group h3{
+  font-size: 16px;
+}
+.group ul li a{
+  font-size: 13px;
+  margin: 20px 0;
+}
+.footerLabel{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid white;
+  height: 40px;
+}
+.logolink img{
+  height: 120px;
+}
+.socialMedia{
+  margin: 0 auto;
+  margin-left: 8rem;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.socialMedia a { 
+  height: 20px;
+}
+.socialMedia a img{ 
+  width: 100%;
+  height: 100%;
 
+}
+.footerLabel p{
+ margin: 0;
+ font-size: 14px;
+ font-weight: 400;
+}
 @keyframes ring {
 
 	0% {
@@ -294,3 +373,4 @@ h1 {
 	}
 
 }
+
