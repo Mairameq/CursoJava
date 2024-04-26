@@ -255,15 +255,15 @@ h1 {
 }
 #banner {
 	position:relative;
-  margin: 3rem 0;
-  font: 50px sans-serif;
-  color:white;
-  height: 96vh;
-  text-align: center;
-  background-image: url('assets/banner.jpg');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+	margin: 2rem 0;
+	font: 50px sans-serif;
+	color:white;
+	height: 96vh;
+	text-align: center;
+	background-image: url('assets/banner.jpg');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 #banner p{
 	width: 45%;
@@ -437,6 +437,7 @@ h1 {
   #menu{
     height: 20px;
   }
+#banner{background-size: cover;height: 74vh;background-position: left;}
   .no-scroll {
     overflow: hidden;
 }
@@ -454,9 +455,13 @@ h1 {
     left: -20px;
 }
   .image-text{
-    top: 36%;
-    left: 50%;
+    width: 85%;
+    top: 22%;
+    left: 0;
+    right: 0;
+    margin: auto;
     text-align: center;
+    text-shadow: 4px 4px 8px black;
   }
   .botones{
     grid-template-columns: 1fr;
@@ -483,10 +488,16 @@ h1 {
     bottom: 0px !important;
   }
   #banner p{
-    width: 90%;
-    margin: auto;
+    position: absolute;
+    width: 73%;
+    height: auto;
+    right: 0;
+    left: 0;
+    top: unset;
+    bottom: 65px;
     text-align: center;
-    font-size:35px;
+    margin: 0 auto;
+    font-size: 28px;
     font-weight: 600;
   }
   .gallery-container{
@@ -499,11 +510,31 @@ h1 {
   .groupsContainer{
     flex-direction: column;
   }
+	.group {
+		border-top:1px solid 
+	}
+	.group:first-child {
+		border-top:none;
+		padding-top: 0px;
+	}
+	.group h3 {
+    font-size: 20px;
+}
+	.group ul li a{
+    font-size: 14px;
+}
   .group{
+    padding-top: 30px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .footerBox{
     grid-template-columns: 1fr;
+    width: 100%;
+    padding: 40px 0 50px;
   }
   .logolink img{
     height: 80px;
@@ -523,4 +554,10 @@ h1 {
   .footerLabel p {
     font-size: 12px;
   }
+	.group ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 }
