@@ -33,20 +33,27 @@ h1 {
   display: flex;
   justify-content: end;
   align-items: center;
-  gap: 3rem;
   margin: 0px;
   padding: 0;
+  height: 100%;
 }
 .headerLinks li{
   list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 .headerLinks li a{
   text-decoration: none;
   color: black;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
 }
 .headerLinks li a:hover{
-  text-decoration: underline;
-  text-underline-offset: 8px;
+  background-color: #107c10;
+  color: white;
 }
 .contenido {
   display: flex;
@@ -61,10 +68,10 @@ h1 {
 }
 .image-text {
   position: absolute;
-  top: 54%;
-  left: 28%;
-  color: aliceblue;
-  transform: translate(-50%, -50%);
+  top: 38%;
+  right: 4rem;
+  width: 38%;
+  color: white;
   z-index: 1;
   font-weight: lighter;
 }
@@ -247,16 +254,22 @@ h1 {
     margin: 10px auto 20px;
 }
 #banner {
+	position:relative;
   margin: 3rem 0;
   font: 50px sans-serif;
   color:white;
-  height: 64vh;
+  height: 96vh;
   text-align: center;
-  background-color:#FFF4A3;
-  background-image: url('assets/banner.png');
-  background-size: cover;
+  background-image: url('assets/banner.jpg');
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+}
+#banner p{
+	width: 45%;
+	position:absolute;
+	top: 36%;
+	right: 0rem;
 }
 .footer{
   width: 100%;
