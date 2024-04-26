@@ -461,7 +461,7 @@ h1 {
     right: 0;
     margin: auto;
     text-align: center;
-    text-shadow: 4px 4px 8px black;
+    text-shadow: 4px 4px 12px black;
   }
   .botones{
     grid-template-columns: 1fr;
